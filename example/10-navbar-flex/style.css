@@ -1,0 +1,101 @@
+
+.navbar {
+  display: flex;
+  height: 40px;
+  width:100px;
+  position: fixed;
+  flex-direction: column;
+  top:0;
+  right:0;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f3542;
+  padding: 10px 20px;
+}
+
+.instructions{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
+  align-items: flex-start;
+  border: #2ed573 solid;
+}
+.instructions p{
+    display: flex;
+      flex-direction: row;
+      justify-items: center;
+  align-self: stretch;
+  border: #2ed573 solid;
+
+}
+.instructions ol{
+  align-self: flex-end;
+  border: #2ed573 solid;
+}
+
+
+.logo {
+  color: #2ed573;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.navbar:hover{
+  height: max-content;
+}
+ .navbar:hover .menu{
+   
+    display: flex;
+  }
+.menu{
+ 
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: #2f3542;
+    font-family: sans-serif;
+
+}
+.menu span {
+/* padding: 0 auto; */
+width:  100px;
+  display: flex;
+    flex-direction: column;
+align-items: flex-start;
+}
+.menu span:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #2ed573 dotted;
+
+}
+.textbox{ width: 100%; /* Or a specific fixed width */
+  overflow: hidden; /* Hides the text outside the container */
+  white-space: nowrap; /* Keeps text on a single line */
+  box-sizing: border-box;
+}
+.animation{
+  /* width: px; */
+  height: 20px;
+   display: inline-block; /* Allows the content to exceed container width */
+  padding-left: 100%; /* Starts the text off-screen to the right */
+  animation: scrollText 15s linear infinite;
+
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0); /* Start position */
+  }
+  to {
+    /* Moves the content to the left. Adjust percentage based on duplication method */
+    transform: translateX(-100%); 
+  }}
+code {
+  font-size: 2rem;
+  font-weight: bold;
+}
