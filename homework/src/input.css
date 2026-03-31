@@ -40,7 +40,7 @@
 }
 
 .heading{
-    @apply m-auto flex flex-col items-center content-center justify-center ;
+    @apply m-auto flex flex-col  justify-center ;
     width: 70%;
   
 }
@@ -73,9 +73,8 @@ h2{
     @apply font-bold text-5xl
 }
 .secondP{
-    @apply flex flex-row justify-center ;
-    
-    margin: 1.35rem 13rem;
+    @apply flex flex-row w-fit h-auto ml-[10%] max-md:flex-col max-md:w-auto max-md:h-full ;
+     
     
 }
 .manPic{
